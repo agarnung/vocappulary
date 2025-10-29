@@ -14,7 +14,7 @@ Aprox. **> 1300 términos** y en crecimiento.
 ### Mensajes
 
 * ✅ Correcto
-* 🟧 Casi correcto (faltaba tilde)
+* 🟧 Casi correcto (e.g. fallo en tilde)
 * ❌ Incorrecto (se muestra la respuesta correcta tras un salto de línea)
 
 ## Para usuarios
