@@ -19,7 +19,7 @@ Aprox. **> 1300 términos** y en crecimiento.
 
 ## Para usuarios
 
-[Descarga el ZIP](https://github.com/agarnung/vocappulary/releases/download/v1.0/vocappulary.zip), descomprímelo y haz doble click en el **.exe**. Puedes crear un acceso directo al escritorio. 
+[Descarga el ZIP](https://github.com/agarnung/vocappulary/releases/download/v1.0/vocappulary.zip), descomprímelo en `C:\Archivos de Programa` (o donde quieras) y haz doble click en el **.exe**, o en un acceso al escritorio. 
 
 ¡Y empieza a aprender idiomas a base de fuerza bruta!.
 
