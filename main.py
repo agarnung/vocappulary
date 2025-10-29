@@ -1,19 +1,3 @@
-# Para crear el ejecutable:
-# Asegúrate de tener Python instalado (ya sea en Windows o Unix)
-#   $ python3 -m venv vocappulary_venv
-#   $ source vocappulary_venv/bin/activate # o .\vocappulary_venv\Scripts\Activate.ps1 en Windows
-#   Opcion 1: local
-#       pip install -r requirements.txt
-#       python main.py
-#   Opcion 2: ejecutable (se generará el nativo de la máquina que ejecute el comando)
-#       $ pip install pyinstaller
-#       $ pyinstaller --onefile --noconsole --name=Vocappulary main.py
-#       La app estará disponible en /mnt/c/Users/Alejandro/Documents/proyectos/vocappulary/dist
-#       Copia la app a donde estén los .json con los diccionarios 
-# Troubleshooting:
-# Si lo ejecutas desde le WSL y da proplemas al instalar, asegúrate de añadir nameserver 8.8.8.8 a /etc/resolv.conf,
-# ver https://stackoverflow.com/questions/52815784/python-pip-raising-newconnectionerror-while-installing-libraries
-
 import tkinter as tk
 from tkinter import messagebox
 import json, random, unicodedata, os
@@ -107,19 +91,38 @@ class VocabApp:
         for widget in self.root.winfo_children():
             widget.destroy()
 
-        self.label_palabra = tk.Label(self.root, text="", font=("Arial", 24, "bold"))
-        self.label_palabra.pack(pady=20)
+        # Frame principal para palabra y entrada
+        self.frame_central = tk.Frame(self.root, bg="#f0f4f8")
+        self.frame_central.pack(expand=True, fill="both", pady=(20,10))
 
-        self.entrada = tk.Entry(self.root, font=("Arial", 16))
-        self.entrada.pack(pady=10)
+        self.label_palabra = tk.Label(self.frame_central, text="", font=("Arial", 24, "bold"))
+        self.label_palabra.pack(pady=10)
+
+        self.entrada = tk.Entry(self.frame_central, font=("Arial", 16))
+        self.entrada.pack(pady=5)
         self.entrada.bind("<Return>", lambda e: self.comprobar())
 
-        self.boton = tk.Button(self.root, text="Comprobar", command=self.comprobar, font=("Arial", 14))
-        self.boton.pack(pady=10)
+        self.boton = tk.Button(self.frame_central, text="Comprobar", command=self.comprobar, font=("Arial", 14))
+        self.boton.pack(pady=5)
 
-        self.info_label = tk.Label(self.root, text="", font=("Arial", 12))
-        self.info_label.pack(pady=10)
+        self.info_label = tk.Label(self.frame_central, text="", font=("Arial", 12))
+        self.info_label.pack(pady=(10, 5))
 
+        # Frame fijo para el botón de volver
+        self.frame_footer = tk.Frame(self.root, bg="#f0f4f8")
+        self.frame_footer.pack(side="bottom", fill="x", pady=(0, 25))
+
+        self.volver_btn = tk.Button(
+            self.frame_footer,
+            text="⬅ Volver",
+            command=self.crear_menu_inicial,
+            font=("Arial", 12),
+            bg="#6c757d",
+            fg="white",
+            activebackground="#5a6268",
+            activeforeground="white"
+        )
+        self.volver_btn.pack()
 
     def nueva_palabra(self):
         # Re-hash según hora actual para más aleatoriedad
