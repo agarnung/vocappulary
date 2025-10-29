@@ -65,9 +65,9 @@ Si hay problemas de red en WSL al instalar librerías, añadir `nameserver 8.8.8
 
 Ver [StackOverflow](https://stackoverflow.com/questions/52815784/python-pip-raising-newconnectionerror-while-installing-libraries).
 
-## Utils incluidos
+### Utils incluidos
 
-### 1. Eliminar palabras repetidas
+#### 1. Eliminar palabras repetidas
 ```bash
 python remove_repeated_words.py ruta_del_json.json
 ```
@@ -75,7 +75,7 @@ python remove_repeated_words.py ruta_del_json.json
 * Elimina claves repetidas de un JSON.
 * Nota: JSON no permite claves duplicadas. Este script elimina duplicados del propio archivo de texto pero no estarían en memoria después de cargar el JSON.
 
-### 2. Traducir vocabulario automáticamente
+#### 2. Traducir vocabulario automáticamente
 
 ```bash
 python translate_json.py [en-fr|fr-en] ruta_del_json.json
