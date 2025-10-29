@@ -2,6 +2,10 @@
 
 App de escritorio para **practicar vocabulario** en Francés **🇫🇷** e Inglés **🇬🇧** a Español **🇪🇸**
 
+<p align="center">
+  <img src="assets/app.png" alt="App Image">
+</p>
+
 Aprox. **> 1300 términos** y en crecimiento.
 
 ## Cómo funciona
