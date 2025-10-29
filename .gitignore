@@ -1,0 +1,23 @@
+# Entornos virtuales
+vocappulary_venv/
+*.venv/
+
+# Archivos compilados / ejecutables
+*.exe
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp

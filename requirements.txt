@@ -1,0 +1,2 @@
+pyinstaller>=5.10.1
+googletrans==4.0.0-rc1
