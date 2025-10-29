@@ -52,7 +52,7 @@ python3 main.py
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --noconsole --name=Vocappulary main.py
+pyinstaller --onefile --windowed --name=Vocappulary main.py
 ```
 
 El ejecutable se encontrará en `dist/Vocappulary.exe`. Copiarlo al directorio donde están los diccionarios `.json`.
