@@ -1,15 +1,15 @@
 # Vocappulary
 
-App de escritorio para **practicar vocabulario** en Francés **🇫🇷** e Inglés **🇬🇧** a Español **🇪🇸**.
+App de escritorio para **practicar vocabulario** en Francés **🇫🇷** e Inglés **🇬🇧** a Español **🇪🇸**
 
 Aprox. **> 1300 términos** y en crecimiento.
 
 ## Cómo funciona
 
-* Elegir idioma de origen (Francés o Inglés).
-* Elegir modo: traducir al español o al idioma original.
-* Introducir la traducción en la entrada de texto y pulsar **Enter** o **Comprobar**.
-* La app indicará si la respuesta es correcta, casi correcta (solo tilde) o incorrecta.
+* Elegir idioma de origen (Francés o Inglés)
+* Elegir modo: traducir al español o al idioma original
+* Introducir la traducción en la entrada de texto y pulsar **Enter** o **Comprobar**
+* La app indicará si la respuesta es correcta, casi correcta (solo tilde) o incorrecta
 
 ### Mensajes
 
