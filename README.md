@@ -90,3 +90,7 @@ python translate_json.py [en-fr|fr-en] ruta_del_json.json
 * Mantiene los valores en español.
 * Genera un nuevo archivo con sufijo `_fr` o `_en` según el modo.
 * La librería puede fallar en ciertos escenarios; no estamos usando token por ahora.
+
+## TODO
+
+Ver [TODO.md](https://github.com/agarnung/vocappulary/blob/main/TODO.md).
